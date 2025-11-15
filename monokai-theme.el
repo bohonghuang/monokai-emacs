@@ -667,13 +667,13 @@ Also affects 'linum-mode' background."
      ((,monokai-class (:inherit tab-line))
       (,monokai-256-class (:inherit tab-line))))
 
-   `(tab-bar-tab-inactive
-     ((,monokai-class (:background ,monokai-gray-d :height 0.7))
-      (,monokai-256-class (:background ,monokai-256-gray-d :height 0.7))))
-
    `(tab-bar-tab
      ((,monokai-class (:inherit tab-bar-tab-inactive :overline ,monokai-foreground :weight bold :background ,monokai-highlight-alt))
       (,monokai-256-class (:inherit tab-bar-tab-inactive :overline ,monokai-256-foreground :weight bold :background ,monokai-256-highlight-alt))))
+
+   `(tab-bar-tab-inactive
+     ((,monokai-class (:background ,monokai-gray-d :height 0.7))
+      (,monokai-256-class (:background ,monokai-256-gray-d :height 0.7))))
 
    `(tab-bar-tab-ungrouped
      ((,monokai-class (:inherit tab-bar-tab-inactive :foreground ,monokai-comments))
